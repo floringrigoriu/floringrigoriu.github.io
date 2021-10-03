@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Eng -&gt; Data*</title>
+    <link>https://floringrigoriu.github.io/</link>
+    <description>Recent content on Eng -&gt; Data*</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 03 Oct 2021 01:07:52 -0700</lastBuildDate><atom:link href="https://floringrigoriu.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Helloworld</title>
+      <link>https://floringrigoriu.github.io/posts/helloworld/</link>
+      <pubDate>Sun, 03 Oct 2021 01:07:52 -0700</pubDate>
+      
+      <guid>https://floringrigoriu.github.io/posts/helloworld/</guid>
+      <description>Hello world ! My name is Florin Grigoriu and this the start of my blog. To many posts to come !
+print(f&amp;#34;Hello world {name}!&amp;#34;) System.out.println(&amp;#34;Hello world &amp;#34;+ name + &amp;#34;!&amp;#34;) echo &amp;#34;Hello world {name} !&amp;#34; </description>
+    </item>
+    
+  </channel>
+</rss>
