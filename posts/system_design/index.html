@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Passion for System Design Interviews | Eng -&gt; Data*</title>
+<meta name="keywords" content="" />
+<meta name="description" content="Over the last 10 years, I had interviewed around 400 candidates for software positions, while working at Microsoft, Facebook (now Meta), and UiPath. There are 3 main types of interviews and it is quite surprising how similar are the interviews across the industry :
+ Coding: does the candidate manage to successfully, end2end solve an algorithmic problem with decent code? Behavior: try to project if the candidate will work well in the team/organization/company.">
+<meta name="author" content="">
+<link rel="canonical" href="https://floringrigoriu.github.io/posts/system_design/" />
+<link crossorigin="anonymous" href="/assets/css/stylesheet.min.5e2b4101351c21e906f398ae96901791830f58d430f96f2659dab7eaef7b3cb7.css" integrity="sha256-XitBATUcIekG85iulpAXkYMPWNQw&#43;W8mWdq36u97PLc=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.min.7680afc38aa6b15ddf158a4f3780b7b1f7dde7e91d26f073e6229bb7a0793c92.js" integrity="sha256-doCvw4qmsV3fFYpPN4C3sffd5&#43;kdJvBz5iKbt6B5PJI="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://floringrigoriu.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://floringrigoriu.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://floringrigoriu.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://floringrigoriu.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://floringrigoriu.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<meta name="generator" content="Hugo 0.88.1" />
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-D9XECDQ5SM"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-D9XECDQ5SM', { 'anonymize_ip': false });
+}
+</script>
+<meta property="og:title" content="Passion for System Design Interviews" />
+<meta property="og:description" content="Over the last 10 years, I had interviewed around 400 candidates for software positions, while working at Microsoft, Facebook (now Meta), and UiPath. There are 3 main types of interviews and it is quite surprising how similar are the interviews across the industry :
+ Coding: does the candidate manage to successfully, end2end solve an algorithmic problem with decent code? Behavior: try to project if the candidate will work well in the team/organization/company." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://floringrigoriu.github.io/posts/system_design/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-10-29T00:56:08-07:00" />
+<meta property="article:modified_time" content="2022-10-29T00:56:08-07:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Passion for System Design Interviews"/>
+<meta name="twitter:description" content="Over the last 10 years, I had interviewed around 400 candidates for software positions, while working at Microsoft, Facebook (now Meta), and UiPath. There are 3 main types of interviews and it is quite surprising how similar are the interviews across the industry :
+ Coding: does the candidate manage to successfully, end2end solve an algorithmic problem with decent code? Behavior: try to project if the candidate will work well in the team/organization/company."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://floringrigoriu.github.io/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Passion for System Design Interviews",
+      "item": "https://floringrigoriu.github.io/posts/system_design/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Passion for System Design Interviews",
+  "name": "Passion for System Design Interviews",
+  "description": "Over the last 10 years, I had interviewed around 400 candidates for software positions, while working at Microsoft, Facebook (now Meta), and UiPath. There are 3 main types of interviews and it is quite surprising how similar are the interviews across the industry :\n Coding: does the candidate manage to successfully, end2end solve an algorithmic problem with decent code? Behavior: try to project if the candidate will work well in the team/organization/company.",
+  "keywords": [
+    
+  ],
+  "articleBody": "Over the last 10 years, I had interviewed around 400 candidates for software positions, while working at Microsoft, Facebook (now Meta), and UiPath. There are 3 main types of interviews and it is quite surprising how similar are the interviews across the industry :\n Coding: does the candidate manage to successfully, end2end solve an algorithmic problem with decent code? Behavior: try to project if the candidate will work well in the team/organization/company. Design: can the candidate realistically imagine high-level to nitty-gritty details of how to build a big piece of software? Think of design {X}.com where X is one of the everyday utility big tech companies like Google or Amazon.  Out of the 3 interviews my personal favorite is the design. The best case is when you are exploring an interesting problem with a smart candidate who sees the problem space for the first time from the position of an implementer. You can expect a flurry of ideas, alternatives, and solutions that would work even if they are wildly different from the standard, canonical solution.\nI see there are 3 categories of interviewers :\n The journeyman. You ask them “please design www.google.com” . The candidate brings great expertise, identify the problem as “one of these search engines problem”, delivers the standard solution for well-known problems in the domain, and lands a realistic and detailed conversation within the boundaries of 45 min interview. Great success! But as an interviewer, you only verify the memory of the candidate, and the candidate might feel not challenged enough. The non-linear thinker. You ask them “please design a spacecraft landing on Mars with reduced gravity and 1% of Earth’s atmosphere”. The candidate thinks for a few minutes and then comes up with a solution as innovative as NASA’s Opportunity Rover which used airbags to soften the landing blows. The solution is great and the candidate describes a decent successful design if he/she is lucky and covers the main important aspects, The template master. This candidate is one that targets any problem as just a problem and has a flow of solving system design problems, just the same way he has a template for solving coding problems. It works at the meta-level, having a strategy like 4C [https://en.wikipedia.org/wiki/C4_model] or any other strategy such as the one described in Grokking System Design [https://www.educative.io/courses/grokking-the-system-design-interview] or Alex Xu’s books. Having a strategy with good coverage of the generic space of a design problem is a significant part, it forces you to methodically Explore the problem, seek a solution, seek alternatives, identify limitations, and break into components and sub-components. All those steps are natural, but the template makes sure that you don’t overlook something hidden under the ill-defined space of the problem offered by the smiling interviewer.  It is good if you are a journeyman, and you know all there is to be known about the target problem - but realistically you can be an expert in only a limited field and when the design is outside of your field you need to use creativity, not recall the 3 implementations on well-known architecture. It is great if you are the creative type, finding unique solutions to the problem and at the same time, unique solutions might not arrive when you are under stress, or you might be getting a bad but seemingly good solution and because you don’t have a standard method you just get stuck on the first solution. The realistic path is one of the templates - you use the template for most of the aspects, you get immersed into the problem, and find some solution, and with a great conversation with the interviewer, you collaboratively find something amazing.\nOn the system design interviews, I have one thing that is really nagging me - a candidate not explaining why. The typical conversation goes like this : I will have a data store for my data, and for the store, I will use . , lately I see being is the likes of Zookeeper or Cassandra Here the question “Why” just begs to be asked, and in absence of a rock-solid answer, the interview fails. Here are some real and not-that-good answers to the Why :\n Because is NoSQL and hence it is fast Because I want to learn  Oh, so you don’t like I can use a different one that you like Because I used before, or a manager recommended to use A good answer could be something like this: THypedTechnology represented here by Zookeeper, it is a technology particularly suited to handle distributed state machines, offering the right implementation for distributed consensus via ZAB protocol. As a technology, it was used {x} years in projects like {Hadoop, Kafka, Spark, Druid} and the fault domains are well understood, but if we want to use different technology we can use alternatively {Etcd or something else} and here are the advantages of one vs other. I propose to use Cassandra for storage because our problem space of storage solution for the chat system requires to model conversation with many messages, where each row can map naturally to a column in the Cassandra column family, but an alternative would be a Relational model with added cost on joining tables, but with the familiarity of the relational model and maturity of various solutions offered by {x,y,z} vendors.  System designs are fun problems to have a conversation about and the right place to explore different opinions and find good answers to the standard journalistic questions WHO, WHAT, WHY, WHEN, WHERE and in the end answer the fundamental question HOW to find an awesome solution and bring to life an idea, a future product making happy people, while building the next {x}.com success story.\n",
+  "wordCount" : "950",
+  "inLanguage": "en",
+  "datePublished": "2022-10-29T00:56:08-07:00",
+  "dateModified": "2022-10-29T00:56:08-07:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://floringrigoriu.github.io/posts/system_design/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Eng -\u003e Data*",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://floringrigoriu.github.io/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://floringrigoriu.github.io/" accesskey="h" title="Eng -&gt; Data* (Alt + H)">Eng -&gt; Data*</a>
+            <span class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </span>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      Passion for System Design Interviews
+    </h1>
+    <div class="post-meta">October 29, 2022
+</div>
+  </header> 
+  <div class="post-content"><p>Over the last 10 years, I had interviewed around 400 candidates for software positions, while working at Microsoft, Facebook (now Meta), and UiPath. There are 3 main types of interviews and  it is quite surprising how similar are the interviews across the industry :</p>
+<ul>
+<li>Coding: does the candidate manage to successfully, end2end solve an algorithmic problem with decent code?</li>
+<li>Behavior: try to project if the candidate will work well in the team/organization/company.</li>
+<li>Design: can the candidate realistically imagine high-level to nitty-gritty details of how to build a big piece of software? Think of design {X}.com where X is one of the everyday utility big tech companies like Google or Amazon.</li>
+</ul>
+<p>Out of the 3 interviews my personal favorite is the design. The best case is when you are exploring an interesting problem with a smart candidate who sees the problem space for the first time from the position of an implementer. You can expect a flurry of ideas, alternatives, and solutions that would work even if they are wildly different from the standard, canonical solution.</p>
+<p>I see there are 3 categories of interviewers :</p>
+<ul>
+<li>The journeyman.  You ask them &ldquo;please design <a href="http://www.google.com">www.google.com</a>&rdquo; . The candidate brings great expertise, identify the problem as   &ldquo;one of these search engines problem&rdquo;, delivers the standard solution for well-known problems in the domain, and lands a realistic and detailed conversation within the boundaries of 45 min interview. Great success! But as an interviewer, you only verify the memory of the candidate, and the candidate might feel not challenged enough.</li>
+<li>The non-linear thinker. You ask them &ldquo;please design a spacecraft landing on Mars with reduced gravity and 1% of Earth&rsquo;s atmosphere&rdquo;. The candidate thinks for a few minutes and then comes up with a solution as innovative as NASA&rsquo;s  Opportunity Rover which used airbags to soften the landing blows. The solution is great and the candidate describes a decent successful design if he/she is lucky and covers the main important aspects,</li>
+<li>The template master. This candidate is one that targets any problem as just a problem and has a flow of solving system design problems, just the same way he has a template for solving coding problems. It works at the meta-level, having a strategy like 4C [https://en.wikipedia.org/wiki/C4_model] or any other strategy such as the one described in  Grokking System Design [https://www.educative.io/courses/grokking-the-system-design-interview] or Alex Xu&rsquo;s books.  Having a strategy with good coverage of the generic space of a design problem is a significant part, it forces you to methodically Explore the problem, seek a solution, seek alternatives, identify limitations, and break into components and sub-components. All those steps are natural, but the template makes sure that you don&rsquo;t overlook something hidden under the ill-defined space of the problem offered by the smiling interviewer.</li>
+</ul>
+<p>It is good if you are a journeyman, and you know all there is to be known about the target problem - but realistically you can be an expert in only a limited field and when the design is outside of your field you need to use creativity, not recall the 3 implementations on well-known architecture.
+It is great if you are the creative type, finding unique solutions to the problem and at the same time, unique solutions might not arrive when you are under stress, or you might be getting a bad but seemingly good solution and because you don&rsquo;t have a standard method you just get stuck on the first solution.
+The realistic path is one of the templates - you use the template for most of the aspects, you get immersed into the problem, and find some solution, and with a great conversation with the interviewer, you collaboratively find something amazing.</p>
+<p>On the system design interviews, I have one thing that is really nagging me - a candidate not explaining why. The typical conversation goes like this :
+I will have a data store for my data, and for the store, I will use <!-- raw HTML omitted -->.
+<!-- raw HTML omitted -->, lately I see being is the likes of Zookeeper or Cassandra
+Here the question &ldquo;Why&rdquo; just begs to be asked, and in absence of a rock-solid answer, the interview fails.  Here are some real and not-that-good answers to the Why :</p>
+<ul>
+<li>Because <!-- raw HTML omitted --> is NoSQL and hence it is fast</li>
+<li>Because I want to learn <!-- raw HTML omitted --></li>
+<li>Oh, so you don&rsquo;t like <!-- raw HTML omitted --> I can use a different one that you like</li>
+<li>Because I used <!-- raw HTML omitted --> before, or a manager recommended to use
+A good answer could be something like this:</li>
+<li>THypedTechnology represented here by Zookeeper, it is a technology particularly suited to handle distributed state machines, offering the right implementation for distributed consensus via ZAB protocol. As a technology, it was used {x}  years in projects like {Hadoop, Kafka, Spark, Druid} and the fault domains are well understood, but if we want to use different technology we can use alternatively {Etcd or something else} and here are the advantages of one vs other.</li>
+<li>I propose to use Cassandra for storage because our problem space of storage solution for the chat system requires to model conversation with many messages, where each row can map naturally to a column in the Cassandra column family, but an alternative would be a Relational model with added cost on joining tables, but with the familiarity of the relational model and maturity of various solutions offered by {x,y,z} vendors.</li>
+</ul>
+<p>System designs are fun problems to have a conversation about and the right place to explore different opinions and find good answers to the standard journalistic questions WHO, WHAT, WHY, WHEN, WHERE and in the end answer the fundamental question HOW to find an awesome solution and bring to life an idea, a future product making happy people, while building the next {x}.com success story.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2022 <a href="https://floringrigoriu.github.io/">Eng -&gt; Data*</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://git.io/hugopapermod" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+    menu.onscroll = function () {
+        localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

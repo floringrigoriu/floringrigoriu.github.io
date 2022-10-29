@@ -6,7 +6,17 @@
     <description>Recent content on Eng -&gt; Data*</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 02 Mar 2022 00:22:29 -0800</lastBuildDate><atom:link href="https://floringrigoriu.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 29 Oct 2022 00:56:08 -0700</lastBuildDate><atom:link href="https://floringrigoriu.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Passion for System Design Interviews</title>
+      <link>https://floringrigoriu.github.io/posts/system_design/</link>
+      <pubDate>Sat, 29 Oct 2022 00:56:08 -0700</pubDate>
+      
+      <guid>https://floringrigoriu.github.io/posts/system_design/</guid>
+      <description>Over the last 10 years, I had interviewed around 400 candidates for software positions, while working at Microsoft, Facebook (now Meta), and UiPath. There are 3 main types of interviews and it is quite surprising how similar are the interviews across the industry :
+ Coding: does the candidate manage to successfully, end2end solve an algorithmic problem with decent code? Behavior: try to project if the candidate will work well in the team/organization/company.</description>
+    </item>
+    
     <item>
       <title>Learning</title>
       <link>https://floringrigoriu.github.io/posts/learning/</link>
