@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Eng -&gt; Data*</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 29 Oct 2022 00:56:08 -0700</lastBuildDate>
+    <lastBuildDate>Sun, 31 Dec 2023 23:44:55 -0800</lastBuildDate>
     <atom:link href="https://floringrigoriu.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Boiling the Frog : Performance Edition</title>
+      <link>https://floringrigoriu.github.io/posts/boiling_frog_-_performance_edition/</link>
+      <pubDate>Sun, 31 Dec 2023 23:44:55 -0800</pubDate>
+      <guid>https://floringrigoriu.github.io/posts/boiling_frog_-_performance_edition/</guid>
+      <description>There is the metaphor of the boiling frog (https://en.wikipedia.org/wiki/Boiling_frog). It is something fascinating when you read about it in a distant mental model. In truth, the concept that a frog will not react to gradual change and will ignore signs, it is just a misconception proven wrong by experiments. But it is indeed a good mental model to warn us about dangers of gradual failure and people lack of reaction of slowly creeping in issues.</description>
+    </item>
     <item>
       <title>Passion for System Design Interviews</title>
       <link>https://floringrigoriu.github.io/posts/system_design/</link>
