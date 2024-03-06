@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Eng -&gt; Data*</title>
     <link>https://floringrigoriu.github.io/</link>
     <description>Recent content on Eng -&gt; Data*</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 31 Dec 2023 23:44:55 -0800</lastBuildDate>
+    <lastBuildDate>Fri, 01 Mar 2024 00:56:17 -0800</lastBuildDate>
     <atom:link href="https://floringrigoriu.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Boiling the Frog : Performance Edition</title>
-      <link>https://floringrigoriu.github.io/posts/boiling_frog_-_performance_edition/</link>
-      <pubDate>Sun, 31 Dec 2023 23:44:55 -0800</pubDate>
-      <guid>https://floringrigoriu.github.io/posts/boiling_frog_-_performance_edition/</guid>
-      <description>There is the metaphor of the boiling frog (https://en.wikipedia.org/wiki/Boiling_frog). It is something fascinating when you read about it in a distant mental model. In truth, the concept that a frog will not react to gradual change and will ignore signs, it is just a misconception proven wrong by experiments. But it is indeed a good mental model to warn us about dangers of gradual failure and people lack of reaction of slowly creeping in issues.</description>
+      <title>Hugo</title>
+      <link>https://floringrigoriu.github.io/posts/hugo/</link>
+      <pubDate>Fri, 01 Mar 2024 00:56:17 -0800</pubDate>
+      <guid>https://floringrigoriu.github.io/posts/hugo/</guid>
+      <description>Meta : This blog is supported via Hugo + themes
+Hugo is a popular template engine specifically designed for building static websites. Unlike dynamic content management systems, Hugo like many other static page generators pre-renders content into HTML files, resulting in lightning-fast loading times and simplified deployment. For my current version I just host this blog in Github pages. Hugo leverages Markdown files for content creation, which is pretty lightweight writing experience for developers.</description>
     </item>
     <item>
       <title>Passion for System Design Interviews</title>
@@ -37,15 +38,6 @@ Coding: does the candidate manage to successfully, end2end solve an algorithmic 
       <guid>https://floringrigoriu.github.io/posts/helloworld/</guid>
       <description>Hello world ! My name is Florin Grigoriu and this the start of my blog. To many posts to come !
 print(f&amp;#34;Hello world {name} !&amp;#34;) System.out.println(&amp;#34;Hello world &amp;#34;+ name + &amp;#34;!&amp;#34;) echo &amp;#34;Hello world {name} !&amp;#34; </description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://floringrigoriu.github.io/posts/drafts/pytorch/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://floringrigoriu.github.io/posts/drafts/pytorch/</guid>
-      <description>plan : Setup :
-install Python -&amp;gt; get anaconda choco install anaconda3
-add VS code support for python notebook enable python interpreter in VS code by selecting VS in anaconda navigator Alternativelly : Anaconda navigator -&amp;gt; Jupyter Lab local UI Alternativelly : Just set C:/tools/Anaconda3 in the path of windows </description>
     </item>
   </channel>
 </rss>
